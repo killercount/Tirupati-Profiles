@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tirupati Behera | Visual Storyteller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-tool="brush" data-draw="off">
+  <!-- Loader Overlay -->
+  <div id="loaderOverlay" class="loader-overlay">
+    <div class="loader-card">
+      <div class="loader-title-row">
+        <span class="loader-dot live"></span>
+        <span class="loader-title">Rendering Profile</span>
+        <span class="loader-sub">Artist · Editor · Designer</span>
+      </div>
+
+      <div class="loader-lines">
+        <div class="loader-line">Booting creative engine...</div>
+        <div class="loader-line">Scanning footage & raw clips...</div>
+        <div class="loader-line">Balancing exposure & color...</div>
+        <div class="loader-line">Layering graphics & motion...</div>
+        <div class="loader-line">Exporting portfolio timeline...</div>
+        <div class="loader-line">Final touches on the canvas...</div>
+      </div>
+
+      <div class="loader-progress">
+        <div class="loader-progress-bar">
+          <div class="loader-progress-fill"></div>
+        </div>
+        <div class="loader-progress-meta">
+          <span id="loaderPercent">0%</span>
+          <span>Rendering might take a moment...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global drawing canvas -->
+  <canvas id="globalCanvas" class="global-canvas"></canvas>
+
+  <!-- Pixel photographer character -->
+  <div id="pixelPhotographer" class="pixel-photographer">
+    <div class="pix-head"></div>
+    <div class="pix-body">
+      <div class="pix-camera">
+        <div class="pix-lens"></div>
+        <div class="pix-camera-body"></div>
+      </div>
+    </div>
+    <div class="pix-legs"></div>
+  </div>
+
+  <!-- Background textures -->
+  <div class="bg-paper"></div>
+  <div class="bg-strokes"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="logo-block">
+        <div class="logo-mark-soft">
+          <span class="logo-initial">TB</span>
+        </div>
+        <div class="logo-text">
+          <h1>Tirupati Behera</h1>
+          <p>Photographer · Video Editor · Graphic Designer</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/tirupatibehera8847/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#studio" class="nav-pill">Studio Canvas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-layout">
+        <div class="hero-left">
+          <div class="hero-tagline">
+            <span class="hero-pill">Vadodara · Gujarat · India</span>
+            <span class="hero-pill ink">Artist in Progress</span>
+          </div>
+
+          <h2 class="hero-title">
+            Visual stories on a<br />
+            <span class="hero-highlight">living canvas.</span>
+          </h2>
+
+          <p class="hero-desc">
+            Tirupati blends <strong>photography</strong>, <strong>video editing</strong>
+            and <strong>graphic design</strong> with a storyteller’s instinct and a
+            technologist’s discipline. Every frame is a decision. Every design is a narrative.
+          </p>
+
+          <div class="hero-tags-row">
+            <span class="tag-chip">Cinematic Reels</span>
+            <span class="tag-chip">Poster Design</span>
+            <span class="tag-chip">Social Media pages</span>
+            <span class="tag-chip">collaboration</span>
+            <span class="tag-chip">Brand Visuals</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">See Selected Work</a>
+            <a href="#studio" class="btn outline">Open Studio Canvas</a>
+          </div>
+
+          <div class="software-strip">
+            <span class="strip-label">Tools in the bag</span>
+            <div class="software-badges">
+              <div class="soft-badge ps">
+                <span class="soft-short">Ps</span>
+                <span class="soft-name">Photoshop</span>
+              </div>
+              <div class="soft-badge lr">
+                <span class="soft-short">Lr</span>
+                <span class="soft-name">Lightroom</span>
+              </div>
+              <div class="soft-badge pr">
+                <span class="soft-short">Pr</span>
+                <span class="soft-name">Premiere Pro</span>
+              </div>
+              <div class="soft-badge ae">
+                <span class="soft-short">Ae</span>
+                <span class="soft-name">After Effects</span>
+              </div>
+              <div class="soft-badge ai">
+                <span class="soft-short">Ai</span>
+                <span class="soft-name">Illustrator</span>
+              </div>
+              <div class="soft-badge dv">
+                <span class="soft-short">DR</span>
+                <span class="soft-name">DaVinci</span>
+              </div>
+              <div class="soft-badge cg hide-on-small">
+                <span class="soft-short">Cg</span>
+                <span class="soft-name">Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-frame">
+            <div class="hero-photo-layer main-photo"></div>
+            <div class="hero-photo-layer secondary-photo"></div>
+            <div class="hero-photo-label">
+              <span>Frames · Layers · Stories</span>
+            </div>
+          </div>
+          <div class="hero-note-card">
+            <p class="note-title">Creative Note</p>
+            <p class="note-body">
+              Currently working with <strong>i-Hub Gujarat</strong>,
+              shaping campaigns, editing promos, and designing visuals that keep
+              founders, students, and audiences scrolling.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h3>About</h3>
+        <p>A technologist with an artist’s instinct.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card torn">
+          <h4>Profile</h4>
+          <p>
+            <strong>B.Tech CSE</strong> student and practicing
+            <strong>visual storyteller</strong> — moving between cameras, timelines,
+            and canvases with ease. Equally comfortable debugging a system
+            and grading a frame.
+          </p>
+          <p>
+            3+ years of hands-on work in <strong>digital media</strong>,
+            <strong>social content</strong>, <strong>graphic design</strong>
+            and <strong>video editing</strong>, with a focus on brand impact.
+          </p>
+        </article>
+
+        <article class="card tape-top">
+          <h4>What happens in the studio?</h4>
+          <ul class="bullet-list">
+            <li>Capture moments with intentional framing and natural light.</li>
+            <li>Edit footage into cinematic sequences and branded reels.</li>
+            <li>Design thumbnails, posters, and campaign visuals.</li>
+            <li>Manage social media narratives with performance in mind.</li>
+          </ul>
+        </article>
+
+        <article class="card tape-corner">
+          <h4>Contact Snapshot</h4>
+          <ul class="info-list">
+            <li>
+              <span>Email</span>
+              <a href="mailto:tirupatibehera35@gmail.com">
+                tirupatibehera35@gmail.com
+              </a>
+            </li>
+            <li>
+              <span>Phone</span>
+              <a href="tel:+918847880644">+91 88478 80644</a>
+            </li>
+            <li>
+              <span>Location</span>
+              Vadodara, Gujarat, India
+            </li>
+            <li>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/tirupatibehera8847/" target="_blank" rel="noopener">
+                linkedin.com/in/tirupatibehera8847
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h3>Skills & Toolkit</h3>
+        <p>From lens to layer — end to end.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card soft-shadow">
+          <h4>Visual & Editing</h4>
+          <ul class="pill-list">
+            <li>Photography</li>
+            <li>Cinematography</li>
+            <li>Color Grading</li>
+            <li>Motion Graphics</li>
+            <li>Thumbnail Design</li>
+          </ul>
+          <p class="card-note">
+            Using <strong>Photoshop</strong>, <strong>Lightroom</strong>,
+            <strong>Premiere Pro</strong>, <strong>After Effects</strong>,
+            <strong>Illustrator</strong> and <strong>DaVinci Resolve</strong>
+            to craft consistent visual experiences.
+          </p>
+        </article>
+
+        <article class="card soft-shadow">
+          <h4>Digital & Social</h4>
+          <ul class="pill-list">
+            <li>Instagram campaigns</li>
+            <li>Facebook storytelling</li>
+            <li>LinkedIn content</li>
+            <li>YouTube edits</li>
+            <li>Content calendars</li>
+          </ul>
+          <p class="card-note">
+            Planning, scheduling and measuring impact — so the art isn’t just beautiful,
+            it performs.
+          </p>
+        </article>
+
+        <article class="card soft-shadow">
+          <h4>Creative Approach</h4>
+          <ul class="bullet-list">
+            <li>Story-first framing and scripting.</li>
+            <li>Visual identity and brand consistency.</li>
+            <li>Experimentation with formats and pace.</li>
+            <li>Iterative improvement from analytics.</li>
+          </ul>
+        </article>
+
+        <article class="card soft-shadow">
+          <h4>Soft Skills</h4>
+          <ul class="bullet-list">
+            <li>Team collaboration on tight deadlines.</li>
+            <li>Client communication and expectation setting.</li>
+            <li>Time management across multiple projects.</li>
+            <li>Adaptability to new tools and formats.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <h3>Experience</h3>
+        <p>Frames, files, and real constraints.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-label">Freelance</span>
+          </div>
+          <div class="timeline-card">
+            <h4>Social Media Manager & Content Creator</h4>
+            <p class="timeline-meta">Remote · Ongoing</p>
+            <ul class="bullet-list">
+              <li>Managed and grew client social accounts across Instagram, Facebook and LinkedIn.</li>
+              <li>Created, edited and packaged content tuned for each platform’s behavior.</li>
+              <li>Ran basic performance analysis to refine creative decisions.</li>
+              <li>Delivered complete visual sets — reels, posts, covers, and thumbnails.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker">
+            <span class="marker-dot"></span>
+            <span class="marker-label">Jul 2024 – Sep 2025</span>
+          </div>
+          <div class="timeline-card">
+            <h4>Admin Executive Officer (Intern) — Parul University</h4>
+            <p class="timeline-meta">Vadodara, Gujarat</p>
+            <ul class="bullet-list">
+              <li>Handled administrative workflows and office data systems.</li>
+              <li>Coordinated tasks across departments for smoother operations.</li>
+              <li>Brought an organized, process-first mindset into creative work.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h3>Selected Work</h3>
+        <p>Where the tools and stories meet.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card stack-photo">
+          <div class="project-tag">Event · Book · Campaign</div>
+          <h4>Startup Conclave 2025 — Mahatma Mandir, Gandhinagar</h4>
+          <p class="project-meta">September 23–24, 2025</p>
+          <p>
+            Designed the official coffee table book launched by
+            <strong>Shri Amit Shah</strong> and <strong>Bhupendra Patel</strong>,
+            along with senior ministers and dignitaries.
+          </p>
+          <ul class="bullet-list">
+            <li>Owned visual direction and layout for the coffee table book.</li>
+            <li>Supported media coverage and live social media storytelling.</li>
+            <li>Prepared campaign-ready visuals using Ps / Ai / Pr.</li>
+          </ul>
+        </article>
+
+        <article class="project-card stack-photo alt">
+          <div class="project-tag">Short Film · Editing</div>
+          <h4>AAWAZ — India Film Project (50-Hour Challenge)</h4>
+          <p class="project-meta">Editor · Post-production</p>
+          <p>
+            Edited <strong>AAWAZ</strong> during India Film Project’s intense
+            50-hour challenge, balancing time pressure with narrative clarity.
+          </p>
+          <ul class="bullet-list">
+            <li>Assembled story, pacing, and sound to keep viewers hooked.</li>
+            <li>Delivered final output within the challenge window.</li>
+            <li>Leant heavily on Premiere Pro and After Effects for polish.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <div class="section-header">
+        <h3>Education</h3>
+        <p>An engineering spine under a creative head.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card tape-top">
+          <h4>B.Tech in Computer Science & Engineering</h4>
+          <p class="project-meta">Parul University · 2023 – Present</p>
+          <p>
+            Bridging computation, logic and systems with real-world creative delivery.
+          </p>
+        </article>
+
+        <article class="card tape-corner">
+          <h4>Higher Secondary (Science)</h4>
+          <p class="project-meta">Hi-Tech College, Jajpur, Odisha · 2020 – 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STUDIO CANVAS / DRAWING TOOLBAR ANCHOR -->
+    <section id="studio" class="section studio-section">
+      <div class="section-header">
+        <h3>Studio Canvas</h3>
+        <p>Draw directly on the page — like a real working desk.</p>
+      </div>
+      <p class="studio-note">
+        Toggle drawing mode and sketch ideas <strong>anywhere</strong> on the site.
+        Think of it as a digital scribble layer over the portfolio — like tracing paper
+        on top of your work.
+      </p>
+    </section>
+  </main>
+
+  <!-- Floating Toolbar (collapsible, right side) -->
+  <div class="floating-toolbar" id="floatingToolbar">
+    <div class="toolbar-header">
+      <span class="toolbar-title">Canvas Tools</span>
+      <div class="toolbar-actions">
+        <button id="toggleDraw" class="toggle-draw">
+          <span class="toggle-indicator"></span>
+          <span class="toggle-label">Draw: Off</span>
+        </button>
+        <button id="collapseToolbar" class="collapse-btn" title="Collapse / Expand">
+          ▸
+        </button>
+      </div>
+    </div>
+
+    <div class="toolbar-content">
+      <div class="toolbar-tools">
+        <button class="tool-btn active" data-tool="brush" title="Brush">
+          <span class="tool-icon">🖌️</span>
+          <span>Brush</span>
+        </button>
+        <button class="tool-btn" data-tool="pen" title="Pen">
+          <span class="tool-icon">✒️</span>
+          <span>Pen</span>
+        </button>
+        <button class="tool-btn" data-tool="marker" title="Glow Marker">
+          <span class="tool-icon">🖍️</span>
+          <span>Marker</span>
+        </button>
+        <button class="tool-btn" data-tool="spray" title="Spray">
+          <span class="tool-icon">🌀</span>
+          <span>Spray</span>
+        </button>
+        <button class="tool-btn" data-tool="line" title="Line">
+          <span class="tool-icon">〰️</span>
+          <span>Line</span>
+        </button>
+        <button class="tool-btn" data-tool="rect" title="Rectangle">
+          <span class="tool-icon">▭</span>
+          <span>Rect</span>
+        </button>
+        <button class="tool-btn" data-tool="circle" title="Circle">
+          <span class="tool-icon">⚪</span>
+          <span>Circle</span>
+        </button>
+        <button class="tool-btn" data-tool="eraser" title="Eraser">
+          <span class="tool-icon">🧽</span>
+          <span>Eraser</span>
+        </button>
+      </div>
+
+      <div class="toolbar-controls">
+        <label class="control-row">
+          <span>Color</span>
+          <input type="color" id="colorPicker" value="#f97316" />
+        </label>
+        <label class="control-row">
+          <span>Size</span>
+          <input type="range" id="sizePicker" min="1" max="40" value="10" />
+        </label>
+        <label class="control-row">
+          <span>Glow</span>
+          <input type="range" id="glowPicker" min="0" max="40" value="18" />
+        </label>
+      </div>
+
+      <div class="toolbar-footer">
+        <button id="clearCanvas" class="btn mini">Clear Layer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Let’s storyboard your next project.</h4>
+        <p>Open to freelance projects, collaborations and full-time roles in creative media.</p>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:tirupatibehera35@gmail.com" class="footer-link">
+          ✉️ tirupatibehera35@gmail.com
+        </a>
+        <a href="tel:+918847880644" class="footer-link">
+          ☎️ +91 88478 80644
+        </a>
+        <a href="https://www.linkedin.com/in/tirupatibehera8847/" class="footer-link" target="_blank" rel="noopener">
+          🔗 LinkedIn Profile
+        </a>
+      </div>
+    </div>
+    <p class="footer-meta">
+      © <span id="yearSpan"></span> Tirupati Behera · Visual Storyteller
+    </p>
+  </footer>
+
+  <!-- Shutter sound: place a royalty-free shutter sound as shutter.mp3 in same folder -->
+  <audio id="shutterSound" src="shutter.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
